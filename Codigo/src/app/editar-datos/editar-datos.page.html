@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <div>
+      <ion-buttons slot="start">
+       <ion-back-button text="" defaultHref="/tabs/tab1" ></ion-back-button>
+      </ion-buttons>
+   </div>
+    <ion-title>
+      Joyería Fevida
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div class="content-login">
+    <h1>Actualiza tus datos.</h1>
+    <p>Seleeciona una opcion para continuar.</p>
+
+    <form>
+    <ion-list>
+      <ion-item mode="ios">
+        <ion-label>Datos de despacho</ion-label>
+        <ion-button slot="end" routerLink="/datos-despacho" routerDirection="root">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label>Correo electronico</ion-label>
+        <ion-button slot="end" routerLink="/cambiar-correo" routerDirection="root">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label>Contraseña</ion-label>
+        <ion-button slot="end" routerLink="/cambiar-pass" routerDirection="root">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+    </ion-list>
+  </form>
+  </div>
+
+</ion-content>
