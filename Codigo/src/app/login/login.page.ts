@@ -15,6 +15,10 @@ contraseña: String;
 
   ngOnInit(){
 
+
+
+
+
     
   }
 
