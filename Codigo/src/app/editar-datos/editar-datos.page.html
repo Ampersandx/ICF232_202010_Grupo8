@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <div>
+      <ion-buttons slot="start">
+       <ion-back-button text="" defaultHref="/tabs/tab1" ></ion-back-button>
+      </ion-buttons>
+   </div>
+    <ion-title>
+      Edita tus datos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h5>Actualiza tus datos.</h5>
+  <p>Seleeciona una opcion para continuar.</p>
+  
+    <ion-list>
+      <ion-item mode="ios">
+        <ion-label>Datos de despacho</ion-label>
+        <ion-button slot="end" routerLink="/datos-despacho" routerDirection="root">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label>Correo electronico</ion-label>
+        <ion-button slot="end" routerLink="/cambiar-correo" routerDirection="root">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label>Contraseña</ion-label>
+        <ion-button slot="end" routerLink="/cambiar-pass" routerDirection="root">
+          <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+    </ion-list>
+
+
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-title>
+      Joyería Fevida
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content-login">
+    <h1>Bienvenido(a),</h1>
+    <p>Inicia sesión para continuar</p>
+
+    <form #form="ngForm">
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Correo electrónico</ion-label>
+        <ion-input type="email" name="correo" placeholder="micorreo@micorreo.cl"  ></ion-input>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Contraseña</ion-label>
+        <ion-input type="password" name="contraseña" placeholder="**********" ></ion-input>
+      </ion-item>
+
+      <div class="button-right">
+        <ion-button mode="ios" size="small" routerLink="/recuperar-pass" routerDirection="root">Olvidé mi contraseña</ion-button>
+      </div>
+
+      <div class="align-center">
+        <ion-button mode="ios" class="btn-pink" expand="block" routerLink="/tabs/tab2" routerDirection="root">Entrar</ion-button>
+
+        <div class="registro">
+          ¿No tienes cuenta? <ion-button mode="ios" size="small" class="btn-registro" routerLink="/registro" routerDirection="root" >Registrate aquí</ion-button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</ion-content>

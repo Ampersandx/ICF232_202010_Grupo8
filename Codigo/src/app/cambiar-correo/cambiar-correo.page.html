@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <div>
+      <ion-buttons slot="start">
+       <ion-back-button text="" defaultHref="/editar-datos" ></ion-back-button>
+      </ion-buttons>
+   </div>
+    <ion-title>Actualiza tu correo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="content-login">
+    <h1>Correo electronico,</h1>
+    <p>Actualiza tu correo electronico.</p>
+  
+    <form>
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Correo electronico actual</ion-label>
+        <ion-input type="email" placeholder="actualcorreo@ejemplo.cl"></ion-input>
+      </ion-item>
+  
+        <ion-item mode="ios">
+          <ion-label mode="ios" position="stacked">Nuevo correo electronico</ion-label>
+          <ion-input type="email" placeholder="nuevocorreo@ejemplo.cl"></ion-input>
+        </ion-item>
+  
+        <ion-item mode="ios">
+          <ion-label mode="ios" position="stacked">Confirmacion de correo electronico</ion-label>
+          <ion-input type="email" placeholder="nuevocorreo@ejemplo.cl"></ion-input>
+        </ion-item>
+  
+        <div class="align-center">
+          <ion-button mode="ios" class="btn-pink" expand="block" >Guardar</ion-button>
+        </div>
+  
+  
+    </form>
+  </div>
+
+</ion-content>

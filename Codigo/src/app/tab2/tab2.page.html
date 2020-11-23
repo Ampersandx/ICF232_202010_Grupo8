@@ -1,0 +1,179 @@
+
+<div class="header-page">
+  <h4>Joyería Fevida</h4>
+  <ion-searchbar placeholder="Buscar productos" mode="ios"></ion-searchbar>
+</div>
+
+<ion-content>
+    <!-- Scrollable Segment -->
+    <ion-segment scrollable mode="md" [(ngModel)]="tabStore" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="oferta" checked>
+        <ion-label>En oferta</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="aros">
+        <ion-label>Aros</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="anillos">
+        <ion-label>Anillos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="conjuntos">
+        <ion-label>Conjuntos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="pulseras">
+        <ion-label>Pulseras</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div class="content-sgmt" [ngSwitch]="tabStore">
+      <ion-grid *ngSwitchCase="'oferta'" ngSelected="selected">
+        <ion-row>
+       
+          <ion-col size="6">
+            <ion-card no-padding mode="ios">
+              <ion-card-header routerLink="/info-producto" routerDirection="root">
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Producto</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Producto</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Producto</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Producto</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid *ngSwitchCase="'aros'">
+        <ion-row>
+       
+          <ion-col size="6">
+            <ion-card no-padding mode="ios">
+              <ion-card-header routerLink="/info-producto" routerDirection="root">
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Aros I</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Aros II</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+        </ion-row>
+      </ion-grid>
+  
+      <ion-grid *ngSwitchCase="'anillos'">
+        <ion-row>
+       
+          <ion-col size="6">
+            <ion-card no-padding mode="ios">
+              <ion-card-header routerLink="/info-producto" routerDirection="root">
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Anillo I</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Anillo II</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid *ngSwitchCase="'conjuntos'">
+        <ion-row>
+       
+          <ion-col size="6">
+            <ion-card no-padding mode="ios">
+              <ion-card-header routerLink="/info-producto" routerDirection="root">
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Conjunto I</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Conjunto II</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid *ngSwitchCase="'pulseras'">
+        <ion-row>
+       
+          <ion-col size="6">
+            <ion-card no-padding mode="ios">
+              <ion-card-header routerLink="/info-producto" routerDirection="root">
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Pulsera I</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+          <ion-col size="6">
+            <ion-card mode="ios">
+              <ion-card-header>
+                <img src="assets/img/img_producto.jpeg" alt="">
+                <ion-card-subtitle>$6700</ion-card-subtitle>
+                <ion-card-title>Pulsera II</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+      
+        </ion-row>
+      </ion-grid>
+
+    </div>
+    
+</ion-content>

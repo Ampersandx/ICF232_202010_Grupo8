@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <div>
+      <ion-buttons slot="start">
+       <ion-back-button text="" defaultHref="/login" ></ion-back-button>
+      </ion-buttons>
+   </div>
+    <ion-title>Joyería Fevida</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content-login">
+    <h1>Registro,</h1>
+    <p>Registrate para continuar</p>
+
+    <form>
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Nombre*</ion-label>
+        <ion-input placeholder="Nombre ApellidoP ApellidoM"></ion-input>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Correo electronico*</ion-label>
+        <ion-input placeholder="ejemplo@ejemplo.cl"></ion-input>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Contraseña*</ion-label>
+        <ion-input type="password" placeholder="************"></ion-input>
+      </ion-item>
+
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Confirmar contraseña*</ion-label>
+        <ion-input type="password" placeholder="************"></ion-input>
+      </ion-item>
+
+      <p>*Campo obligatorio</p>
+
+      <div class="align-center">
+        <ion-button mode="ios" class="btn-pink" expand="block" routerLink="/login" routerDirection="root">Registrarme</ion-button>
+      </div>
+
+
+    </form>
+  </div>
+
+</ion-content>

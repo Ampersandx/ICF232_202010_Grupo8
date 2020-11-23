@@ -1,0 +1,53 @@
+ion-header {
+  &:after {
+    display: none;
+  }
+  ion-toolbar {
+    --min-height: 50px;
+    --border-width: 0;
+    --background: var(--light-pink);
+    ion-title {
+      font-size: 14px;
+      color: white;
+    }
+  }
+}
+  
+  ion-content {
+    --padding-start: 0!important;
+    --padding-end: 0!important;
+  
+    ion-card {
+      box-shadow: none;
+      border-radius: 0;
+      background-color: transparent;
+      margin: 0;
+      ion-card-header {
+        ion-card-subtitle {
+          color: var(--pink);
+          font-size: 14px;
+        }
+        ion-card-title {
+          font-size: 18px;
+        }
+      }
+    }
+    .formulario {
+      display: inline-flex;
+      border-top: 1px solid black;
+      padding-top:20px;
+      margin-top: 20px;
+      width: 100%;
+      align-items: center;
+      justify-content: end;
+      input {
+        width: 80px;
+        height: 40px;
+         margin-right: 15px;
+      }
+    }
+    .text-right {
+      text-align: right;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <div>
+      <ion-buttons slot="start">
+       <ion-back-button text="" defaultHref="/login" ></ion-back-button>
+      </ion-buttons>
+   </div>
+    <ion-title>Joyería Fevida</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="content-login">
+    <h1>Recuperar contraseña</h1>
+    <p>Ingresa tu correo electronico para recuperar tu contraseña</p>
+
+    <form>
+      <ion-item mode="ios">
+        <ion-label mode="ios" position="stacked">Correo electrónico</ion-label>
+        <ion-input placeholder="micorreo@micorreo.cl"></ion-input>
+      </ion-item>
+
+
+      <div class="align-center">
+        <ion-button mode="ios" class="btn-pink" expand="block" routerLink="/login" routerDirection="root">Enviar</ion-button>
+      </div>
+
+    </form>
+  </div>
+
+</ion-content>
