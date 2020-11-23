@@ -17,4 +17,16 @@ import { LoginPage } from './login.page';
   ],
   declarations: [LoginPage]
 })
-export class LoginPageModule {}
+export class LoginPageModule {
+  emailValue: string ="";
+  passValue: string="";
+  constructor(public navCtrl: IonicModule) {
+  }
+  login(){
+    var email=this.emailValue;
+    var pass=this.passValue;
+    console.log(email);
+    console.log(pass);
+//Conectar con ajax, mysql
+  }
+}

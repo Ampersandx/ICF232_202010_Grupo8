@@ -14,28 +14,31 @@
     <form>
       <ion-item mode="ios">
         <ion-label mode="ios" position="stacked">Nombre*</ion-label>
-        <ion-input placeholder="Nombre ApellidoP ApellidoM"></ion-input>
+        <ion-input type="text" placeholder="Nombre ApellidoP ApellidoM"  [(ngModel)]="nombre"></ion-input>
       </ion-item>
 
       <ion-item mode="ios">
         <ion-label mode="ios" position="stacked">Correo electronico*</ion-label>
-        <ion-input placeholder="ejemplo@ejemplo.cl"></ion-input>
+        <ion-input type="text" placeholder="ejemplo@ejemplo.cl" [(ngModel)]="email" ></ion-input>
       </ion-item>
 
       <ion-item mode="ios">
         <ion-label mode="ios" position="stacked">Contraseña*</ion-label>
-        <ion-input type="password" placeholder="************"></ion-input>
+        <ion-input type="password" placeholder="************" [(ngModel)]="password"  ></ion-input>
       </ion-item>
 
       <ion-item mode="ios">
         <ion-label mode="ios" position="stacked">Confirmar contraseña*</ion-label>
-        <ion-input type="password" placeholder="************"></ion-input>
+        <ion-input type="password" placeholder="************" [(ngModel)]="confirm_password"></ion-input>
       </ion-item>
 
       <p>*Campo obligatorio</p>
 
       <div class="align-center">
-        <ion-button mode="ios" class="btn-pink" expand="block" routerLink="/login" routerDirection="root">Registrarme</ion-button>
+        <ion-button mode="ios" class="btn-pink" expand="block"  routerDirection="root" (click)="tryRegister()" >Registrarme</ion-button>
+      </div>
+      <div class="align-center">
+        <ion-button mode="ios" class="btn-pink" expand="block"  routerDirection="root" (click)="formLogin()">Volver</ion-button>
       </div>
 
 

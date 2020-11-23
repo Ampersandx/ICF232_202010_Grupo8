@@ -10,7 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
-
+import { PostProvider } from '../providers/post-provider';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -21,11 +22,13 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    PostProvider,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
