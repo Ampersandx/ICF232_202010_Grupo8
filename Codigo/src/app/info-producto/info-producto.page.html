@@ -1,45 +1,34 @@
-<ion-header>
-  <ion-toolbar>
-    <div>
-      <ion-buttons slot="start">
-       <ion-back-button text="" defaultHref="/tabs/tab2" ></ion-back-button>
-      </ion-buttons>
-   </div>
-    <ion-title>Informacion del producto</ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6">
-        <img src="assets/img/img_producto.jpeg" alt="">
-      </ion-col>
-      <ion-col size="6">
-        <h6>Name producto</h6>
-        <p>SKU: X</p>
-        <H6>Precio: X</H6>
-
-        <form action="">
-          <label for="">Cantidad</label>
-          <input type="number" placeholder="1">
-        </form>
-
-
-        <ion-button>Agregar</ion-button>
-        <p>Stock disponible: X</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-    <div class="descripcion">
-      <h6>Descripción:</h6>
-      <p>Nombre producto</p>
-      <p>Codigo: X</p>
+  <ion-card>
+    <img src="assets/img/img_producto.jpeg" alt="">
+    <ion-card-header>
+      <ion-card-subtitle>$4500</ion-card-subtitle>
+      <ion-card-title>Nombre producto</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Descripción del producto</p>
       <P>Plata: X</P>
       <p>Peso: X</p>
       <p>Tamaño: X</p>
+      <br>
+      <p>SKU: 456</p>
+      <p>Stock disponible: 0</p>
+
+    <div class="formulario">
+      <input type="number" placeholder="1">
+      <ion-button class="btn-pink">Agregar</ion-button>
     </div>
+    <div class="text-right">
+      <ion-button class="btn-basic" (click)="dismiss()">Continuar comprando</ion-button>
+    </div>
+    </ion-card-content>
+
+  
+  </ion-card>
+
 
 </ion-content>

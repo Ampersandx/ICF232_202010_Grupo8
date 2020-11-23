@@ -31,24 +31,55 @@
 }
 
 .btn-black {
+  --background-activated: black;
+  margin-top: 30px;
   --background: black;
-  --border-radius: 30px;
+  margin-right: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .9rem;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .btn-basic {
   --background: transparent;
   color: black;
   --box-shadow: none;
-  font-size: .8rem;
+  font-size: 14px;
+  text-decoration: underline;
+  --background-activated: transparent;
 }
 
 ion-content {
-  --padding-start: 25px;
-  --padding-end: 30px;
+  --background: #fafafa;
+  --padding-start: 10px;
+  --padding-end: 10px;
 }
 
 ion-back-button {
   span {
     display: none;
   }
+  color: white;
 }
+
+ion-item {
+  --highlight-color-valid: transparent;
+  --highlight-color-invalid: transparent;
+  --highlight-color-focused: var(--ion-color-light);
+}
+
+
+.btn-pink {
+  --background-activated: var(--dark-pink);
+   --background: #d81b60;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-size: .9rem;
+   font-weight: 400;
+ }
+
+ ion-button {
+  --border-radius: 4px;
+ }
