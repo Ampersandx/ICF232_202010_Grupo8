@@ -1,13 +1,15 @@
-ion-header {
+
+  ion-header {
     &:after {
       display: none;
     }
     ion-toolbar {
       --min-height: 50px;
       --border-width: 0;
+      --background: var(--light-pink);
       ion-title {
-        font-size: 12px;
-        color: var(--dark-pink);
+        font-size: 14px;
+        color: white;
       }
     }
   }

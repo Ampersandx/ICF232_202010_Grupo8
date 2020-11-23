@@ -1,14 +1,50 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar mode="ios">
     <div>
       <ion-buttons slot="start">
        <ion-back-button text="" defaultHref="/tabs/tab1" ></ion-back-button>
       </ion-buttons>
    </div>
-    <ion-title>Compras realizadas</ion-title>
+    <ion-title>
+      Historial de compras
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-list>
+    <ion-item mode="ios">
+      <ion-label>
+       <h5>Fecha: 22-11-2020</h5>
+       <h6>Total: $ 5000</h6>
+      </ion-label>
+      <ion-button slot="end" routerLink="/modal-historial" routerDirection="root">
+        <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item mode="ios">
+      <ion-label>
+        <h5>Fecha: 21-11-2020</h5>
+        <h6>Total: $ 9000</h6>
+       </ion-label>
+       <ion-button slot="end" routerLink="/modal-historial" routerDirection="root">
+        <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item mode="ios">
+      <ion-label>
+        <h5>Fecha: 20-11-2020</h5>
+        <h6>Total: $ 3000</h6>
+       </ion-label>
+       <ion-button slot="end" routerLink="/modal-historial" routerDirection="root">
+        <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+  </ion-list>
+
 
 </ion-content>

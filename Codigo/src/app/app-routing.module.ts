@@ -49,6 +49,14 @@ const routes: Routes = [
   {
     path: 'datos-despacho',
     loadChildren: () => import('./datos-despacho/datos-despacho.module').then( m => m.DatosDespachoPageModule)
+  },
+  {
+    path: 'modal-historial',
+    loadChildren: () => import('./modal-historial/modal-historial.module').then( m => m.ModalHistorialPageModule)
+  },
+  {
+    path: 'modal-cotizacion',
+    loadChildren: () => import('./modal-cotizacion/modal-cotizacion.module').then( m => m.ModalCotizacionPageModule)
   }
 ];
 @NgModule({
