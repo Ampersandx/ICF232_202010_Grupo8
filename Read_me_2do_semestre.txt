@@ -11,3 +11,5 @@ Link trello: https://trello.com/b/3VgAeJ52/proyecto-fevida
 Jefe proyecto: Vicente Tapia - V.tapiavera@gmail.com
 
 Diagramas y mas en https://drive.google.com/drive/folders/1w1tIuKl_wA0nJlmSSDNAvcFmvrj5cHqV?usp=sharing
+
+Link video de la feria de proyectos: https://youtu.be/ep3203lzXK8
